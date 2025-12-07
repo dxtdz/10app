@@ -97,23 +97,6 @@ def decode_ascii_payload(payload_array):
     except Exception as e:
         return f"Lỗi decode ASCII payload: {e}"
 
-def checkkey():
-    url = 'https://anotepad.com/notes/aey9nt33'
-    try:
-        response = requests.get(url, timeout=30)
-        response.raise_for_status()
-    except Exception as e:
-        print("Không thể lấy dữ liệu từ anotepad:", e)
-        os.kill(os.getpid(), 9)
-    md5_list = extract_keys(response.text)
-    key = input("Nhập Key Để Tiếp Tục:\n").strip()
-    hashed = hashlib.md5(key.encode()).hexdigest()
-    if hashed in md5_list:
-        print("Key Đúng")
-    else:
-        print("Key Saii. Thoát chương trình.")
-        os.kill(os.getpid(), 9)
-
 def check_task_limit():
     if not os.path.exists('data'):
         return 0
@@ -4522,3 +4505,4 @@ if __name__ == "__main__":
 
 
                         
+
