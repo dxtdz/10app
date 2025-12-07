@@ -16,3 +16,4 @@ ab5
 datetime
 discord.py
 typing
+munch
