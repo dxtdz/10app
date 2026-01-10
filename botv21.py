@@ -4389,11 +4389,11 @@ async def removetask(ctx, user: discord.User):
 async def menu(ctx):
     embed = discord.Embed(
         title="📜・MENU BOT",
-        description="🍁 𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐕𝐢𝐜𝐭𝐨𝐫𝐢𝐚 𝐁𝐞𝐬𝐭 𝐀𝐤𝐚 - 𝐓𝐚 𝐁𝐚𝐜𝐡 𝐋𝐨𝐧𝐠** 🍁\n",
+        description="🍁 XuanThang miss em ** 🍁\n",
         color=discord.Colour.from_rgb(0, 255, 255)
     )
     embed.add_field(
-        name="👑・𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐕𝐢𝐜𝐭𝐨𝐫𝐢𝐚 𝐁𝐞𝐬𝐭 𝐀𝐤𝐚 - 𝐓𝐚 𝐁𝐚𝐜𝐡 𝐋𝐨𝐧𝐠",
+        name="👑・XuanThang miss em ",
         value=(
             f"🔹 **`{config['prefix']}addtask`** — Thêm Task Cho Người Dùng\n"
             f"🔹 **`{config['prefix']}removetask`** — Xoá Task Của Người Dùng\n\n"
@@ -4445,8 +4445,8 @@ async def menu(ctx):
         ),
         inline=False
     )
-    embed.set_footer(text="🍁𝐇𝐨𝐰𝐞𝐯𝐞𝐫 𝐕𝐢𝐜𝐭𝐨𝐫𝐢𝐚 𝐁𝐞𝐬𝐭 𝐀𝐤𝐚 - 𝐓𝐚 𝐁𝐚𝐜𝐡 𝐋𝐨𝐧𝐠 🍁")
-    embed.set_thumbnail(url="https://i.imgur.com/MyNnHr1.jpeg")
+    embed.set_footer(text="🍁XuanThang miss em 🍁")
+    embed.set_thumbnail(url="https://tse3.mm.bing.net/th/id/OIP.yXYy4LCvNqPb8q12hvM0NwHaEK?pid=Api&h=220&P=0")
     await ctx.send(embed=embed)
 
 @bot.command()
@@ -4505,4 +4505,5 @@ if __name__ == "__main__":
 
 
                         
+
 
